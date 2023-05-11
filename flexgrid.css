@@ -1,4 +1,19 @@
-.grid{ 
+body{
+    padding: 0;
+    margin: 0;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+.container {
     display: grid;
+    height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:
+    " nav nav nav nav"
+    " sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+    gap: 0.6%;
 }
